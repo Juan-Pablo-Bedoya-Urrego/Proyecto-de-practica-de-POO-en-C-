@@ -1,0 +1,14 @@
+C:\Users\Familia BU\Desktop\POOC#\bin\Debug\net8.0\POOC#.exe
+C:\Users\Familia BU\Desktop\POOC#\bin\Debug\net8.0\POOC#.deps.json
+C:\Users\Familia BU\Desktop\POOC#\bin\Debug\net8.0\POOC#.runtimeconfig.json
+C:\Users\Familia BU\Desktop\POOC#\bin\Debug\net8.0\POOC#.dll
+C:\Users\Familia BU\Desktop\POOC#\bin\Debug\net8.0\POOC#.pdb
+C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\POOC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\POOC#.AssemblyInfoInputs.cache
+C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\POOC#.AssemblyInfo.cs
+C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\POOC#.csproj.CoreCompileInputs.cache
+C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\POOC#.dll
+C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\refint\POOC#.dll
+C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\POOC#.pdb
+C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\POOC#.genruntimeconfig.cache
+C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\ref\POOC#.dll
