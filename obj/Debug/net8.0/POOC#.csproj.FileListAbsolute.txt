@@ -12,3 +12,4 @@ C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\refint\POOC#.dll
 C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\POOC#.pdb
 C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\POOC#.genruntimeconfig.cache
 C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\ref\POOC#.dll
+C:\Users\Familia BU\Desktop\POOC#\obj\Debug\net8.0\POOC#.sourcelink.json
