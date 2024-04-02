@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Familia BU\\.nuget\\packages\\": {}
+    "C:\\Users\\Juan Pablo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Familia BU\\Desktop\\POOC#\\POOC#.csproj",
+      "projectUniqueName": "C:\\Users\\Juan Pablo\\Desktop\\TrabajoCsharpConPoo\\POOC#.csproj",
       "projectName": "POOC#",
-      "projectPath": "C:\\Users\\Familia BU\\Desktop\\POOC#\\POOC#.csproj",
-      "packagesPath": "C:\\Users\\Familia BU\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Familia BU\\Desktop\\POOC#\\obj\\",
+      "projectPath": "C:\\Users\\Juan Pablo\\Desktop\\TrabajoCsharpConPoo\\POOC#.csproj",
+      "packagesPath": "C:\\Users\\Juan Pablo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Juan Pablo\\Desktop\\TrabajoCsharpConPoo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Familia BU\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Juan Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
