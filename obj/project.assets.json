@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Juan Pablo\\.nuget\\packages\\": {}
+    "C:\\Users\\MARIANA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juan Pablo\\Desktop\\TrabajoCsharpConPoo\\POOC#.csproj",
+      "projectUniqueName": "C:\\Users\\MARIANA\\Desktop\\TrabajoCsharpConPoo\\POOC#.csproj",
       "projectName": "POOC#",
-      "projectPath": "C:\\Users\\Juan Pablo\\Desktop\\TrabajoCsharpConPoo\\POOC#.csproj",
-      "packagesPath": "C:\\Users\\Juan Pablo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juan Pablo\\Desktop\\TrabajoCsharpConPoo\\obj\\",
+      "projectPath": "C:\\Users\\MARIANA\\Desktop\\TrabajoCsharpConPoo\\POOC#.csproj",
+      "packagesPath": "C:\\Users\\MARIANA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MARIANA\\Desktop\\TrabajoCsharpConPoo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Juan Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\MARIANA\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -59,12 +59,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.1, 8.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.1, 8.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.1, 8.0.1]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.1, 8.0.1]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
