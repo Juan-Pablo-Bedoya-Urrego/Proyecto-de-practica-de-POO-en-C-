@@ -37,6 +37,7 @@ class Program{
         }
         /*Finalmente despues de los 3 rounds se compara la salud para determinar cual de los dos pokemones
         Es el ganador*/
+        Console.WriteLine("**********************El Ganador es**********************");
         if (pokemon1.GetSalud() > pokemon2.GetSalud())
         {
             Console.WriteLine($"Gana {pokemon1.GetNombre()}! con {pokemon1.GetSalud()} puntos de vida");
