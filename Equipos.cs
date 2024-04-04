@@ -7,7 +7,7 @@ public class Equipos : IEquipos
 {
 
     private string nombreEquipo { get; set; }
-    public List<Jugador> jugadoresEquipo = new List<Jugador>();
+    public List<Jugador> jugadoresEquipo { get; set; } = new List<Jugador>();
     private int totalRendimientoEquipo { get; set; }
 
     public Equipos(string nombreEquipo)

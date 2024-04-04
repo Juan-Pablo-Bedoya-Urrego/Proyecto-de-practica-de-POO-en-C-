@@ -4,6 +4,8 @@ public interface IPokemon
 {
     int Ataque();
     int Defensa();
+    int RecibirAtaque(int ataqueRecibido);
+    void dañoInverso(string pokemonResiste,int dañoInverso);
 }
 
 //La clase Pokemon con la interfaz que declare anteriormente
@@ -27,12 +29,12 @@ public class Pokemon : IPokemon
         //Aqui se guarda los ataques con un valor entero desde 0 a 40
         for (int i = 0; i < 3; i++)
         {
-            AtaquesPokemon.Add(r.Next(0, 40));
+            this.AtaquesPokemon.Add(r.Next(0, 40));
         }
         //y aqui se guardan las defensas 
         for (int i = 0; i < 3; i++)
         {
-            DefensasPokemon.Add(r.Next(10, 35));
+            this.DefensasPokemon.Add(r.Next(10, 35));
         }
     }
     /*el metodo ataque en el cual de la lista de ataques se escoje de manera aleatorio un ataque de esta lista 
@@ -41,7 +43,7 @@ public class Pokemon : IPokemon
     valor*/
     public int Ataque()
     {
-        int ataque = AtaquesPokemon[r.Next(0, 3)];
+        int ataque = this.AtaquesPokemon[r.Next(0, 3)];
         double randomValue = r.NextDouble();
         double multiplicadorDaño;
 
@@ -63,25 +65,25 @@ public class Pokemon : IPokemon
     //Lo mismo que el ataque ya que los valores del 50/50 ya son 0.5 o 1.0
     public int Defensa()
     {
-        int defensa = DefensasPokemon[r.Next(0, 2)];
+        int defensa = this.DefensasPokemon[r.Next(0, 2)];
         double multiplicadorDefensa = r.NextDouble() < 0.5 ? 1 : 0.5;
         return (int)(defensa * multiplicadorDefensa);
     }
     //Este metodo se usa para poder ir modificando la salud de cada pokemon a medida que va a avanzado la pelea
     public void SetSalud(int Salud)
     {
-        saludPokemon = Salud;
+        this.saludPokemon = Salud;
     }
     /*Este se usa para poder ver el valor que tiene el atribito nombrePokemon ya que no se puede acceder 
     directamente a este atributo por que es privado*/
     public String GetNombre()
     {
-        return nombrePokemon;
+        return this.nombrePokemon;
     }
     //Lo mismo que el GetNombre
     public int GetSalud()
     {
-        return saludPokemon;
+        return this.saludPokemon;
     }
     /*Este metodo se usa para calcular el daño que recibe cada objeto y asi poder descontar esto de la salud 
     de ese objeto lo que se ase es rebicir como parametro el ataque que le causo el otro objetos a este 
@@ -89,8 +91,8 @@ public class Pokemon : IPokemon
     pero si el ataque es mayor que la defensa se decontara salud*/
     public int RecibirAtaque(int ataqueRecibido)
     {
-        int defensaAtaque = Defensa();
-        Console.WriteLine($"Ataque recibido por {nombrePokemon} es de {ataqueRecibido} y su defensa de {defensaAtaque}");
+        int defensaAtaque = this.Defensa();
+        Console.WriteLine($"Ataque recibido por {this.nombrePokemon} es de {ataqueRecibido} y su defensa de {defensaAtaque}");
         if (defensaAtaque >= ataqueRecibido)
         {
             return defensaAtaque - ataqueRecibido;
@@ -99,9 +101,16 @@ public class Pokemon : IPokemon
         {
             int diferencia = Math.Max(0, ataqueRecibido - defensaAtaque);
             int nuevaSalud = saludPokemon - diferencia;
-            SetSalud(nuevaSalud);
-            Console.WriteLine($"{nombrePokemon} ha recibido {diferencia} puntos de daño y queda con {GetSalud()} puntos de vida");
+            this.SetSalud(nuevaSalud);
+            Console.WriteLine($"{this.nombrePokemon} ha recibido {diferencia} puntos de daño y queda con {this.GetSalud()} puntos de vida");
             return 0;
+        }
+    }
+
+    public void dañoInverso(string pokemonResiste,int dañoInverso){
+        if(dañoInverso != 0){
+            this.SetSalud(GetSalud() - dañoInverso);
+            Console.WriteLine($"El pokemon {pokemonResiste} resistio el ataque por ende {this.GetNombre()} pierde {dañoInverso} puntos de vida y queda con {this.GetSalud()} de vida");
         }
     }
 }

@@ -39,20 +39,11 @@ class Program
 
                     Console.WriteLine($"{pokemon1.GetNombre()} ataca a {pokemon2.GetNombre()}!");
                     int dañoInverso = pokemon2.RecibirAtaque(ataquePokemon1);
-                    if (dañoInverso != 0)
-                    {
-                        pokemon1.SetSalud(pokemon1.GetSalud() - dañoInverso);
-                        Console.WriteLine($"El pokemon {pokemon2.GetNombre()} resistio el ataque por ende {pokemon1.GetNombre()} pierde {dañoInverso} puntos de vida y queda con {pokemon1.GetSalud()} de vida");
-                    }
-
+                    pokemon1.dañoInverso(pokemon2.GetNombre(),dañoInverso);
 
                     Console.WriteLine($"{pokemon2.GetNombre()} ataca a {pokemon1.GetNombre()}!");
                     int dañoInverso2 = pokemon1.RecibirAtaque(ataquePokemon2); ;
-                    if (dañoInverso2 != 0)
-                    {
-                        pokemon2.SetSalud(pokemon2.GetSalud() - dañoInverso2);
-                        Console.WriteLine($"El pokemon {pokemon1.GetNombre()} resistio el ataque por ende {pokemon2.GetNombre()} pierde {dañoInverso2} puntos de vida y queda con {pokemon2.GetSalud()} de vida");
-                    }
+                    pokemon2.dañoInverso(pokemon1.GetNombre(),dañoInverso2);
                 }
                 /*Finalmente despues de los 3 rounds se compara la salud para determinar cual de los dos pokemones
                 Es el ganador*/
@@ -117,12 +108,12 @@ class Program
                                 }
                                 contador = Jugadores.Count;
                             }
-                            Console.WriteLine("Seleccion realizada");
+                            Console.WriteLine("==========================Seleccion realizada==========================");
                             break;
                         case "Partido":
                             int rendimientoEquipoOne = equipoOne.totalRendimiento();
                             int rendimientoEquipoTwo = equipoTwo.totalRendimiento();
-
+                            Console.WriteLine("**********************El Equipo Ganador es**********************");
                             if (rendimientoEquipoOne > rendimientoEquipoTwo)
                             {
                                 Console.WriteLine($"El equipo ganador es: {equipoOne.getNombreEquipo()} con un rendimiento de: {rendimientoEquipoOne}");
