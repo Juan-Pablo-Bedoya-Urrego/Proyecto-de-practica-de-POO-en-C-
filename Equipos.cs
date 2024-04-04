@@ -1,7 +1,7 @@
 public interface IEquipos
 {
     void listarJugadores(Jugador juga);
-    int agregarJugadores();
+    int totalRendimiento();
 }
 public class Equipos : IEquipos
 {
@@ -26,7 +26,7 @@ public class Equipos : IEquipos
         jugadoresEquipo.Add(juga);
     }
 
-    public int agregarJugadores()
+    public int totalRendimiento()
     {
         int sumaRendimiento = 0;
         foreach (Jugador ren in jugadoresEquipo)

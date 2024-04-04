@@ -120,8 +120,8 @@ class Program
                             Console.WriteLine("Seleccion realizada");
                             break;
                         case "Partido":
-                            int rendimientoEquipoOne = equipoOne.agregarJugadores();
-                            int rendimientoEquipoTwo = equipoTwo.agregarJugadores();
+                            int rendimientoEquipoOne = equipoOne.totalRendimiento();
+                            int rendimientoEquipoTwo = equipoTwo.totalRendimiento();
 
                             if (rendimientoEquipoOne > rendimientoEquipoTwo)
                             {
